@@ -1,4 +1,4 @@
-package Practice;
+package PracticeOperators;
 
 /*
 * To qualify for a loan, a person must make at least $30,00 and
@@ -7,7 +7,7 @@ package Practice;
 
 import java.util.Scanner;
 
-public class LongQualifier {
+public class LoanQualifierLogicalOperators {
     public static void main(String arg[]){
         //Inicializar variables
         int salarioMinimo = 30000;
@@ -24,12 +24,9 @@ public class LongQualifier {
         scanner.close();
 
         //Estructura de decisión
-        if(sueldo >= salarioMinimo){
-            if (AñosTrabajados>= AñosEmpleadosRequerido){
+        if(sueldo >= salarioMinimo && AñosTrabajados>= AñosEmpleadosRequerido){
+
                 System.out.println("Genial!, se te otorgara un prestamo");
-            }else{
-                System.out.println("No cumples con los años minimos requeridos");
-            }
         }else{
             System.out.println("No cumples con el salario minimo requerido");
         }
