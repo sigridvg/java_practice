@@ -6,4 +6,8 @@ public class SquareClass extends RectangleClass{
     public double calculatePerimeter() {
         return sides * length;
     }
+
+    public void print(String name){
+        System.out.println("Prueba overloading metodos. Nombre: "+name);
+    }
 }

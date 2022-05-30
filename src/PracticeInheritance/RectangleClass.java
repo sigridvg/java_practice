@@ -33,4 +33,8 @@ public class RectangleClass {
         return (2*length) + (2*width);
     }
 
+    public void print(){
+        System.out.println("Prueba overloading metodos");
+    }
+
 }
