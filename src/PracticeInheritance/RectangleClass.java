@@ -1,9 +1,9 @@
 package PracticeInheritance;
 
 public class RectangleClass {
-    private double length;
-    private double width;
-    private double sides = 4;
+    double length;
+    double width;
+    double sides = 4;
 
     public double getLength() {
         return length;
