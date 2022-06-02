@@ -8,8 +8,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionHandling {
-    public static void main(String arg[]){
+    public static void main(String arg[]) throws IOException {
         createNewFile();
+        createNewFileRethrow();
     }
 
     public static void createNewFile() {
@@ -66,5 +67,14 @@ public class ExceptionHandling {
             e.printStackTrace();
         }
     }
+    public static void createNewFileRethrow() throws IOException {
+        File file = new File("ruta/prueba/archivo.txt");
+        file.createNewFile();
+    }
 
+    public static void calculateSalary(double hours, double rate){
+        if(hours>40){
+            throw new IllegalArgumentException("We don't allow overtime");
+        }
+    }
 }
